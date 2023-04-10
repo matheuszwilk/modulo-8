@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+    <title>Agendamento</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="cataineir-left">
+            <div>
+                <h1>Controle de Agendamento</h1>
+            </div>
+            <div id="lottie-animation"></div>
+        </div>
+        <div class="container-right">
+            <div>
+                <label class="t-menor">Bem vindo ao</label>
+                <br>
+                <label class="t-maior">Sistema de Agendamento</label>
+            </div>
+            <form>
+                <fieldset>
+                    <input type="text" placeholder="Digite seu nome completo">
+                    <span><i class="fa fa-address-book"></i></span>
+                </fieldset>
+                <div class="text-rose-700" id="text-nome">Campo Obrigatório!</div>
+                <fieldset>
+                    <input type="tel" id="telefone" placeholder="Digite seu numero com DDD">
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                </fieldset>
+                <div class="text-rose-700" id="text-telefone">Campo Obrigatório!</div>
+                <button id="btnSub" type="submit">Enviar</button>
+                <button id="btnAg">Clique aqui para acessar a área Agendamento</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Nome Completo
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                    <th>
+                        Data/Hora 
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <th>
+                <td>Adicione seu contato para aparecer na lista de espera.</td>
+                </th>
+            </tfoot>
+        </table>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
